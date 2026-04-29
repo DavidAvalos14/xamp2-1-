@@ -7,20 +7,5 @@ services:
     volumes:
       - datos:/app/datos
 
-  web:
-      build: .
-      container_name: xamp_web
-      restart: always
-      ports:
-        - "8088:80"
-      volumes:
-        - .:/var/www/html
-      networks:
-        - xamp_network
-
-networks:
-  xamp_network:
-    driver: bridge
-
 volumes:
   datos:
