@@ -2,7 +2,7 @@
 # Uso: bash deploy.sh
 
 # Copiamos código actualizado de GitHub
-git pull origin main
+git pull origin master
 
 # Detenemos contenedores
 docker-compose down
